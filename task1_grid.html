@@ -1,0 +1,288 @@
+<!--
+	Hugh Eugene Cardi M. Navarro
+	BSIT-2 
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grid Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style type="text/css">
+        body {
+            background: linear-gradient(to bottom, #515151, #2c2c2c);
+            font-family: "Roboto", sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background: #929ea3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 30px;
+            margin: 20px 0;
+        }
+
+        h4, p {
+        	text-align: center;
+        }
+
+        .content {
+            display: grid;
+            justify-content: center;
+            grid-template-columns: auto auto auto auto auto;
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .picture {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .picture:hover {
+            transform: translateY(-5px);
+        }
+
+        .picture img {
+            display: block;
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .picture:hover img {
+            filter: brightness(80%);
+        }
+
+        .picture:hover .button {
+            background-color: #3fb0ac;
+        }
+
+        .button {
+            width: 100%;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 0 0 10px 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #45a69b;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>VOITURES</h1>
+    </div>
+
+    <h2>CSS GRID GALLERY</h2>
+
+    <div class="content">
+        <div class="picture">
+            <img src="https://images.unsplash.com/photo-1621285853634-713b8dd6b5fd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aHVyYWNhbnxlbnwwfHwwfHx8MA%3D%3D" alt="image 1">
+            <h4>Huracán</h4>
+            <p>V10 5.2-litre<br>341 km/h (212 mph)</p>
+            <a href="https://www.lamborghini.com/en-en/models/huracan">
+            <button class="button">Click Me</button>
+        </a>
+        </div>
+
+        <div class="picture">
+			<img src="https://images.unsplash.com/photo-1519245659620-e859806a8d3b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFtYm9yZ2hpbmklMjBhdmVudGFkb3J8ZW58MHx8MHx8fDA%3D" alt="image 2">
+			<h4>Aventador</h4>
+			<p>V12 6.5-litre<br>349 km/h (217 mph)</p>
+			<a href="https://www.lamborghini.com/en-en/models/aventador">
+			<button class="button">Click Me</button>
+		</a>
+		</div>
+
+		<div class="picture">
+			<img src="https://images.unsplash.com/photo-1622240656481-f34f28882c09?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njl8fGdhbGxhcmRvfGVufDB8fDB8fHww" alt="image 3">
+			<h4>Gallardo</h4>
+			<p>V10 5.0-litre<br>309 km/h (192 mph)</p>
+			<a href="https://www.lamborghini.com/en-en/history/gallardo-2003">
+			<button class="button">Click Me</button>
+		</a>
+		</div>
+
+		<div class="picture">
+			<img src="https://images.unsplash.com/photo-1696581081928-2d84c0c384d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFtYm9yZ2hpbmklMjBkaWFibG98ZW58MHx8MHx8fDA%3D" alt="image 4">
+			<h4>Diablo</h4>
+			<p>V12 5.7-litre<br>330 km/h (210 mph)</p>
+			<a href="https://www.lamborghini.com/en-en/history/diablo">
+			<button class="button">Click Me</button>
+		</a>
+		</div>
+
+		<div class="picture">
+			<img src="https://images.unsplash.com/photo-1672626923308-93468533df5f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fE11cmNpJUMzJUE5bGFnb3xlbnwwfHwwfHx8MA%3D%3D" alt="image 5">
+			<h4>Murciélago</h4>
+			<p>V12 6.2-litre<br>349 km/h (217 mph)</p>
+			<a href="https://www.lamborghini.com/en-en/history/murcielago">
+			<button class="button">Click Me</button>
+		</a>
+		</div>
+
+		<div class="picture">
+			<img src="https://images.unsplash.com/photo-1603182128451-2903f01e2ea8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8em9uZGF8ZW58MHx8MHx8fDA%3D" alt="image 6">
+			<h4>Zonda R</h4>
+			<p>Mercedes-AMG M120 7.3-litre V12<br>350 km/h (217 mph)</p>
+			<a href="https://www.pagani.com/zonda-r/">
+			<button class="button">Click Me</button>
+		</a>
+		</div>
+
+		<div class="picture">
+			<img src="https://images.unsplash.com/photo-1635974067648-ff1a1bc9d5f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aHVheXJhfGVufDB8fDB8fHww" alt="image 7">
+			<h4>Huayra</h4>
+			<p> Mercedes-AMG M158 6.0-litre twin-turbo V12<br>370 km/h (230 mph)</p>
+			<a href="https://www.pagani.com/huayra/">
+			<button class="button">Click Me</button>
+		</a>
+		</div>
+
+		<div class="picture">
+			<img src="https://images.unsplash.com/photo-1600710967322-a4562604bb10?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVnZXJhfGVufDB8fDB8fHww" alt="image 8">
+			<h4>Regera</h4>
+			<p>Twin-turbocharged 5.0-litre V8 + 3 electric motors<br>410+ km/h (255+ mph)</p>
+			<a href="https://www.koenigsegg.com/model/regera">
+			<button class="button">Click Me</button>
+		</a>
+		</div>
+
+		<div class="picture">
+			<img src="https://images.unsplash.com/photo-1627440829335-b42fba2a15dd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YW1nJTIwZ3R8ZW58MHx8MHx8fDA%3D" alt="image 9">
+			<h4>AMG GT Black Series</h4>
+			<p>M178 4.0-liter twin-turbocharged V8<br>325 km/h (202 mph)</p>
+			<a href="https://www.mercedes-benz.ca/en/future-vehicles/mercedes-amg-gt-black-series">
+			<button class="button">Click Me</button>
+		</a>
+		</div>
+
+		<div class="picture">
+			<img src="https://images.unsplash.com/photo-1619405399517-d7fce0f13302?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29ydmV0dGUlMjBzdGluZ3JheXxlbnwwfHwwfHx8MA%3D%3D" alt="image 10">
+			<h4>Stingray</h4>
+			<p> 6.2-liter V8 engine<br>312 km/h (194 mph)</p>
+			<a href="https://www.chevrolet.com/performance/corvette">
+			<button class="button">Click Me</button>
+		</a>
+		</div>
+
+		<div class="picture">
+			<img src="https://images.unsplash.com/photo-1693149351428-15a4961d698d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fGd0MyUyMHJzfGVufDB8fDB8fHww" alt="image 11">
+			<h4>911 GT3 RS</h4>
+			<p>4.0-liter naturally aspirated flat-six engine<br>310 km/h (193 mph)</p>
+			<a href="https://www.porsche.com/international/models/911/911-gt3-rs/911-gt3-rs/">
+			<button class="button">Click Me</button>
+		</a>
+		</div>
+
+		<div class="picture">
+			<img src="https://images.unsplash.com/photo-1680567486368-4d2c938cf1e9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTEzfHxhOTAlMjBzdXByYXxlbnwwfHwwfHx8MA%3D%3D" alt="image 12">
+			<h4>GR Supra A90</h4>
+			<p>B58B30 3.0-liter turbocharged inline-six engine<br>250 km/h (155 mph)</p>
+			<a href="https://toyota.com.ph/gr-supra">
+			<button class="button">Click Me</button>
+		</a>
+		</div>
+
+		<div class="picture">
+			<img src="https://images.unsplash.com/photo-1635320019015-9b2165b42d74?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTEyfHxhOTAlMjBzdXByYXxlbnwwfHwwfHx8MA%3D%3D" alt="image 13">
+			<h4>911 Carrera</h4>
+			<p>3.0-liter twin-turbocharged flat-six engine<br>293 km/h (182 mph)</p>
+			<a href="https://www.porsche.com/international/models/911/911-models/carrera/">
+			<button class="button">Click Me</button>
+		</a>
+		</div>
+
+		<div class="picture">
+			<img src="https://images.unsplash.com/photo-1642862322003-9baee670bc4c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTZ8fHIzNXxlbnwwfHwwfHx8MA%3D%3D" alt="image 14">
+			<h4>GTR R35</h4>
+			<p>3.8-liter twin-turbocharged V6 engine<br>315 km/h (196 mph)</p>
+			<a href="https://www.nissanusa.com/vehicles/sports-cars/gt-r.html">
+			<button class="button">Click Me</button>
+		</a>
+		</div>
+
+		<div class="picture">
+			<img src="https://images.unsplash.com/photo-1698131788901-72de36a7e1f9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHBvcnNjaGUlMjA5MTElMjB0dXJibyUyMHN8ZW58MHx8MHx8fDA%3D" alt="image 15">
+			<h4>991 Turbo S</h4>
+			<p>3.8-liter twin-turbocharged flat-six engine<br>330 km/h (205 mph)</p>
+			<a href="https://www.porsche.com/international/models/911/911-turbo-models/911-turbo-s/">
+			<button class="button">Click Me</button>
+		</a>
+		</div>
+
+		<div class="picture">
+			<img src="https://images.unsplash.com/photo-1616617535619-55e3db07bd5b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YXVkaSUyMHI4fGVufDB8fDB8fHww" alt="image 16">
+			<h4>R8</h4>
+			<p>5.2-liter naturally aspirated V10 engine<br>330 km/h (205 mph)</p>
+			<a href="https://www.audiusa.com/us/web/en/models/r8/r8-heritage/2024/overview.html">
+			<button class="button">Click Me</button>
+		</a>
+		</div>
+
+		<div class="picture">
+			<img src="https://images.unsplash.com/photo-1627454820516-dc767bcb4d3e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzE3fHxmZXJyYXJpfGVufDB8fDB8fHww" alt="image 17">
+			<h4>Chiron Super Sport</h4>
+			<p>8.0-liter quad-turbocharged W16 engine<br>431 km/h (267 mph)</p>
+			<a href="https://www.bugatti.com/the-bugatti-models/chiron-facets-of-performance/super-sport/">
+			<button class="button">Click Me</button>
+		</a>
+		</div>
+
+		<div class="picture">
+			<img src="https://images.unsplash.com/photo-1614200187524-dc4b892acf16?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Zjh8ZW58MHx8MHx8fDA%3D" alt="image 18">
+			<h4>F8 Tributo</h4>
+			<p>3.9-liter twin-turbocharged V8 engine<br>340 km/h (211 mph)</p>
+			<a href="https://www.ferrari.com/en-EN/auto/f8-tributo">
+			<button class="button">Click Me</button>
+		</a>
+		</div>
+
+		<div class="picture">
+			<img src="https://images.unsplash.com/photo-1652449650828-9e441cba7562?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bWNsYXJlbiUyMDc2NWx0fGVufDB8fDB8fHww" alt="image 19">
+			<h4>765LT</h4>
+			<p>4.0-liter twin-turbocharged V8 engine<br>330 km/h (205 mph)</p>
+			<a href="https://cars.mclaren.com/en/super-series/765lt">
+			<button class="button">Click Me</button>
+		</a>
+		</div>
+
+		<div class="picture">
+			<img src="https://images.unsplash.com/photo-1584082411947-dfa856e714eb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXN0b24lMjBtYXJ0aW58ZW58MHx8MHx8fDA%3D" alt="image 20">
+			<h4>Dbs Volante</h4>
+			<p>5.2-liter twin-turbocharged V12 engine<br>340 km/h (211 mph)</p>
+			<a href="https://www.astonmartin.com/en/models/dbs-volante">
+			<button class="button">Click Me</button>
+		</a>
+		</div>
+    </div>
+
+</body>
+</html>
